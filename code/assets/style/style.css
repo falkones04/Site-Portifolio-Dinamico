@@ -14,3 +14,6 @@ hr{
     object-fit: contain;
     
 }
+.card {
+    height: 100%;
+}

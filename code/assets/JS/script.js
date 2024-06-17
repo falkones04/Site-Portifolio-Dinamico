@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(reposData => {
             mostrarRepositorios(reposData); 
             return fetch('./assets/Json/bd.json');
-        }).then(res => res.json())
+        })
+        .then(res => res.json())
         .then(jsonDados => {
             conteudo = jsonDados.conteudo;
             amigos = jsonDados.amigos;
@@ -32,14 +33,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 <img src="${dados.avatar_url}" class="img-fluid mb-2" alt="Perfil Image">
             </div>
             <div class="col-12 col-md-9">
-                <h3>${dados.name}</h3>
-                <p>${dados.bio}</p>
+                <h3 id="nomeUsuario"></h3>
+                <p id="bioUsuario"></p>
                 <b>Localização:</b> <p style="display: inline-block">${dados.location}</p><br>
                 <b>Site:</b> <p style="display: inline-block">${dados.blog}</p>
                 <div class="mt-3 float-end">
                     <img src="./assets/Imagens/follow.png" class="icon"> <span class="fw-bold">${dados.followers}</span>
                 </div>
-
                 <div class="row mt-3">
                     <div class="col-12">
                         <a href="https://www.instagram.com/falkone_0405/" target="_blank"><img src="./assets/Imagens/instagram.png" class="icon mx-1"></a>
@@ -56,6 +56,9 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
 
         sessao1.appendChild(perfilDiv);
+
+        escrever(dados.name, document.getElementById("nomeUsuario"));
+        escrever(dados.bio, document.getElementById("bioUsuario"));
     }
 
     function mostrarRepositorios(repos) {
@@ -67,12 +70,16 @@ document.addEventListener("DOMContentLoaded", function () {
         repos.forEach(repo => {
             let repoItem = document.createElement("div");
             repoItem.className = "col-12 col-sm-6 col-md-4 p-2";
+
+            let maxChars = 100;
+            let descricaoLimitada = repo.description ? (repo.description.length > maxChars ? repo.description.substring(0, maxChars) + "..." : repo.description) : 'No description';
+
             repoItem.innerHTML = `
-                <a href="repo.html" class="text-decoration-none text-dark">
+                <a href="${repo.html_url}" class="text-decoration-none text-dark">
                     <div class="card">
                         <div class="card-header fw-bold">${repo.name}</div>
                         <div class="card-body">
-                            <p>${repo.description || 'No description'}</p>
+                            <p>${descricaoLimitada || 'No description'}</p>
                             <span class="badge bg-danger p-2">${repo.language}</span>
                             <div class="float-end">
                                 <img src="./assets/Imagens/star.png" class="icon mx-2"><span>${repo.stargazers_count}</span>
@@ -92,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const contmostra = document.getElementById("DataSession3");
         let newDiv = document.createElement("div");
         newDiv.className = "row";
-
+    
         let carouselIndicators = "";
         let carouselItems = "";
 
@@ -132,6 +139,9 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
 
         contmostra.appendChild(newDiv);
+        var myCarousel = new bootstrap.Carousel(document.getElementById('carouselExampleCaptions'), {
+            interval: 5000 
+        });
     }
 
     function MostrarAmigos(amigos) {
@@ -143,8 +153,8 @@ document.addEventListener("DOMContentLoaded", function () {
             let newDiv = document.createElement("div");
             newDiv.className = "col-12 col-sm-6 col-md-3 m-1";
             newDiv.innerHTML = `
-            <div class="card">
-                 <div class ="card-body">
+            <div class="card w-100 h-100">
+                 <div class="card-body">
                     <img src="${item.url_img}" class="img-fluid divImgColegas">
                     <div class="card-header text-center"><a href="#" target="_blank" class="text-decoration-none text-dark">${item.nome}</a></div>
                     <button class="badge bg-dark mt-2 d-block"><img src="./assets/Imagens/git.png" class="icon"> Github</button>
@@ -156,12 +166,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         telaAmigos.appendChild(linha);
     }
-     function escrever(str, el) {
+
+    function escrever(str, el) {
         var char = str.split('').reverse();
         var typer = setInterval(function() {
-         if (!char.length) return clearInterval(typer);
-        var next = char.pop();
-        el.innerHTML += next;
+            if (!char.length) return clearInterval(typer);
+            var next = char.pop();
+            el.innerHTML += next;
         }, 100);
-        }
+    }
 });
