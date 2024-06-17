@@ -2,3 +2,20 @@ hr{
     border-color: rgb(0, 0, 0);
     opacity: 1;
 }
+.icon{ 
+    min-height: 25px;
+    max-width: 25px;
+}
+#carrosel{
+    width: 700px;
+    height: 400px;
+}
+.divImgColegas{
+    max-width: 210px;
+    height:200px;
+    overflow: hidden;
+    padding-left: 20px;
+}
+.imgcolegas{
+    object-fit: cover;
+}
