@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <p>${dados.bio}</p>
                 <b>Localização:</b> <p style="display: inline-block">${dados.location}</p><br>
                 <b>Site:</b> <p style="display: inline-block">${dados.blog}</p>
-                <div class="mt-3">
+                <div class="mt-3 float-end">
                     <img src="./assets/Imagens/follow.png" class="icon"> <span class="fw-bold">${dados.followers}</span>
                 </div>
 
@@ -156,4 +156,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         telaAmigos.appendChild(linha);
     }
+     function escrever(str, el) {
+        var char = str.split('').reverse();
+        var typer = setInterval(function() {
+         if (!char.length) return clearInterval(typer);
+        var next = char.pop();
+        el.innerHTML += next;
+        }, 100);
+        }
 });

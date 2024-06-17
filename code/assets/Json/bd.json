@@ -52,7 +52,7 @@
         {  
         "id":2, 
         "nome":"Danilo Riguetti",
-        "url_img":"https://www.einerd.com.br/wp-content/uploads/2017/10/dragonballsuper-transforma%C3%A7%C3%A3oGokucapa-890x466.jpg",
+        "url_img":"./Assets/Imagens/Danputifero.jpeg",
         "url_git":""
     }
     ]
