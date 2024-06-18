@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h3 id="nomeUsuario"></h3>
                 <p id="bioUsuario"></p>
                 <b>Localização:</b> <p style="display: inline-block">${dados.location}</p><br>
-                <b>Site:</b> <p style="display: inline-block">${dados.blog}</p>
+                <b>Site:</b> <p style="display: inline-block">${dados.blog|| "Não possuo ainda"}</p>
                 <div class="mt-3 float-end">
                     <img src="./assets/Imagens/follow.png" class="icon"> <span class="fw-bold">${dados.followers}</span>
                 </div>
@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
             newDiv.innerHTML = `
                 <div class="card h-100">
                     <img src="${item.url_img}" class="card-img-top" alt="Imagem do amigo">
-                    <div class="card-body">
+                    <div class="card-body ">
                         <h5 class="card-title">${item.nome}</h5>
                         <p class="card-text">${item.desc}</p>
                         <div class="d-flex justify-content-center">
@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <img src="./assets/Imagens/git.png" class="icon" alt="Ícone do Github"> Github
                             </a>
                             <a href="https://www.instagram.com/${item.insta_user}" target="_blank">
-                                <img src="./assets/Imagens/instagram.png" class="iconfriends" alt="Ícone do Instagram">
+                                <img src="./assets/Imagens/instagram.png" class="iconfriends mt-1" alt="Ícone do Instagram">
                             </a>
                         </div>
                     </div>

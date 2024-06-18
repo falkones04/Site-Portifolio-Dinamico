@@ -42,27 +42,31 @@
       "nome": "Samuel Garcia",
       "url_img": "./Assets/Imagens/samuca.png",
       "git_user": "SamuelGarciaVieira",
+      "insta_user":"samuellg__",
       "desc": "casado com a Michelly "
     },
     {
-      "id": 4,
+      "id": 1,
       "nome": "Maria Fernanda",
       "url_img": "./Assets/Imagens/fe.png",
-      "git_user": "",
+      "git_user": "fegabrich",
+      "insta_user":"kailanyos",
       "desc": "Descobridora dos sete mares."
     },
     {
       "id": 2,
       "nome": "Danilo Riguetti",
       "url_img": "./Assets/Imagens/Danputifero.jpeg",
-      "git_user": "",
+      "git_user": "Danilohr",
+      "insta_user":"daniloriguette",
       "desc": "Garoto de programa e script kid"
     },
     {
       "id": 3,
       "nome": "Kailany Oliveira",
       "url_img": "./Assets/Imagens/lany.png",
-      "git_user": "",
+      "git_user": "kailanyos",
+      "insta_user":"kailanyos",
       "desc": "mexe com energia misticas...sabe tirar tarot."
     }
   ]
