@@ -1,60 +1,69 @@
 {
-    "conteudo": [
-      {
-        "id": 1,
-        "titulo": "Física Quântica",
-        "descricao": "Explore os mistérios da física quântica com uma abordagem aprofundada sobre conceitos fundamentais, incluindo o famoso experimento mental do Gato de Schrödinger.",
-        "url_img": "https://img.odcdn.com.br/wp-content/uploads/2023/06/Destaque-gato-de-Schrodinger.jpg",
-        "url_cont": "https://www.ifsc.usp.br/~strontium/Teaching/Material2014-1%20SFI5774%20Mecanicaquantica/Seminario%20-%20Guilherme%20-%20Gato%20de%20Schr%F6dinger.pdf"
-      },
-      {
-        "id": 2,
-        "titulo": "Acelerador de Partículas",
-        "descricao": "Descubra o funcionamento do acelerador de partículas brasileiro, o Sirius, e compreenda sua importância na pesquisa científica moderna.",
-        "url_img": "https://static.mundoeducacao.uol.com.br/mundoeducacao/conteudo_legenda/30f273ac92d4b0340147cb1f6d4f1cef.jpg",
-        "url_cont": "https://cnpem.br/sirius-o-que-e-e-como-funciona-o-acelerador-de-particulas-brasileiro/"
-      },
-      {
-        "id": 3,
-        "titulo": "O que é o Princípio da Incerteza",
-        "descricao": "Entenda o princípio da incerteza de Heisenberg, um dos pilares da mecânica quântica, e sua influência no comportamento das partículas subatômicas.",
-        "url_img": "https://questoescosmologicas.com/wp-content/uploads/2012/09/quantumparticles.jpg?w=585&h=351",
-        "url_cont": "https://rce.casadasciencias.org/rceapp/art/2020/004/"
-      },
-      {
-        "id": 4,
-        "titulo": "Estudo sobre Criptografia Quântica",
-        "descricao": "Mergulhe no mundo da criptografia quântica e descubra como essa tecnologia promete revolucionar a segurança da informação.",
-        "url_img": "https://tm.ibxk.com.br/2023/10/05/05160629698316.jpg?ims=750x",
-        "url_cont": "https://www.scielo.br/j/rbef/a/9nqhvdBC5fVYzvR5sjXCNHk/"
-      },
-      {
-        "id": 5,
-        "titulo": "A Importância da Atividade Física para a Saúde Mental",
-        "descricao": "Explore como a prática regular de atividades físicas pode melhorar a saúde mental, proporcionando benefícios significativos para o bem-estar geral.",
-        "url_img": "https://alcateiademonstros.com.br/wp-content/uploads/2023/01/Treino-avancado-de-costas-do-Mr-Olympia-Cbum-completo-1.png",
-        "url_cont": "https://rce.casadasciencias.org/rceapp/art/2020/004/"
-      }
-    ],
-    "amigos": [
-      {
-        "id":0, 
-        "nome":"Samuel Garcia",
-        "url_img":"https://i.pinimg.com/originals/35/a4/9b/35a49beb24faa07cf26c34cb2b5cfd11.jpg",
-        "url_git":""
+  "conteudo": [
+    {
+      "id": 1,
+      "titulo": "Física Quântica",
+      "descricao": "Explore os mistérios da física quântica com uma abordagem aprofundada sobre conceitos fundamentais.",
+      "url_img": "https://img.odcdn.com.br/wp-content/uploads/2023/06/Destaque-gato-de-Schrodinger.jpg",
+      "url_cont": "https://www.ifsc.usp.br/~strontium/Teaching/Material2014-1%20SFI5774%20Mecanicaquantica/Seminario%20-%20Guilherme%20-%20Gato%20de%20Schr%F6dinger.pdf"
     },
-      { 
-        "id":1, 
-        "nome":"Samuel Garcia",
-        "url_img":"https://i.pinimg.com/736x/1f/44/b1/1f44b155a44072c835c790cce714ff34.jpg",
-        "url_git":""
+    {
+      "id": 2,
+      "titulo": "Acelerador de Partículas",
+      "descricao": "Descubra o funcionamento do acelerador de partículas brasileiro, o Sirius, e compreenda sua importância na pesquisa científica moderna.",
+      "url_img": "https://static.mundoeducacao.uol.com.br/mundoeducacao/conteudo_legenda/30f273ac92d4b0340147cb1f6d4f1cef.jpg",
+      "url_cont": "https://cnpem.br/sirius-o-que-e-e-como-funciona-o-acelerador-de-particulas-brasileiro/"
     },
-        {  
-        "id":2, 
-        "nome":"Danilo Riguetti",
-        "url_img":"./Assets/Imagens/Danputifero.jpeg",
-        "url_git":""
+    {
+      "id": 3,
+      "titulo": "O que é o Princípio da Incerteza",
+      "descricao": "Entenda o princípio da incerteza de Heisenberg e sua influência no comportamento das partículas subatômicas.",
+      "url_img": "https://questoescosmologicas.com/wp-content/uploads/2012/09/quantumparticles.jpg?w=585&h=351",
+      "url_cont": "https://rce.casadasciencias.org/rceapp/art/2020/004/"
+    },
+    {
+      "id": 4,
+      "titulo": "Estudo sobre Criptografia Quântica",
+      "descricao": "Mergulhe no mundo da criptografia quântica e descubra como essa tecnologia promete revolucionar a segurança da informação.",
+      "url_img": "https://tm.ibxk.com.br/2023/10/05/05160629698316.jpg?ims=750x",
+      "url_cont": "https://www.scielo.br/j/rbef/a/9nqhvdBC5fVYzvR5sjXCNHk/"
+    },
+    {
+      "id": 5,
+      "titulo": "A Importância da Atividade Física para a Saúde Mental",
+      "descricao": "Explore como a prática regular de atividades físicas pode melhorar a saúde mental.",
+      "url_img": "https://alcateiademonstros.com.br/wp-content/uploads/2023/01/Treino-avancado-de-costas-do-Mr-Olympia-Cbum-completo-1.png",
+      "url_cont": "https://rce.casadasciencias.org/rceapp/art/2020/004/"
     }
-    ]
-  }
-  
+  ],
+  "amigos": [
+    {
+      "id": 0,
+      "nome": "Samuel Garcia",
+      "url_img": "./Assets/Imagens/samuca.png",
+      "git_user": "SamuelGarciaVieira",
+      "desc": "casado com a Michelly "
+    },
+    {
+      "id": 4,
+      "nome": "Maria Fernanda",
+      "url_img": "./Assets/Imagens/fe.png",
+      "git_user": "",
+      "desc": "Descobridora dos sete mares."
+    },
+    {
+      "id": 2,
+      "nome": "Danilo Riguetti",
+      "url_img": "./Assets/Imagens/Danputifero.jpeg",
+      "git_user": "",
+      "desc": "Garoto de programa e script kid"
+    },
+    {
+      "id": 3,
+      "nome": "Kailany Oliveira",
+      "url_img": "./Assets/Imagens/lany.png",
+      "git_user": "",
+      "desc": "mexe com energia misticas...sabe tirar tarot."
+    }
+  ]
+}

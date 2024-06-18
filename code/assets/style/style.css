@@ -17,3 +17,7 @@ hr{
 .card {
     height: 100%;
 }
+.iconfriends{
+    min-height: 30px;
+    max-width: 30px;
+}

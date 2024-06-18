@@ -75,15 +75,15 @@ document.addEventListener("DOMContentLoaded", function () {
             let descricaoLimitada = repo.description ? (repo.description.length > maxChars ? repo.description.substring(0, maxChars) + "..." : repo.description) : 'No description';
 
             repoItem.innerHTML = `
-                <a href="${repo.html_url}" class="text-decoration-none text-dark">
+              <a href="repo.html?id=${repo.id}" class="text-decoration-none text-dark">
                     <div class="card">
                         <div class="card-header fw-bold">${repo.name}</div>
                         <div class="card-body">
                             <p>${descricaoLimitada || 'No description'}</p>
-                            <span class="badge bg-danger p-2">${repo.language}</span>
+                            <span class="badge bg-success p-2">${repo.language}</span>
                             <div class="float-end">
-                                <img src="./assets/Imagens/star.png" class="icon mx-2"><span>${repo.stargazers_count}</span>
-                                <img src="./assets/Imagens/view.png" class="icon mx-2"><span>${repo.watchers_count}</span>
+                                <img src="./Assets/Imagens/star.png" class="icon mx-2"><span>${repo.stargazers_count}</span>
+                                <img src="./Assets/Imagens/fork.png" class="icon mx-2"><span>${repo.forks_count}</span>
                             </div>
                         </div>
                     </div>
@@ -151,15 +151,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
         amigos.forEach(item => {
             let newDiv = document.createElement("div");
-            newDiv.className = "col-12 col-sm-6 col-md-3 m-1";
+            newDiv.className = "col-12 col-sm-6 col-md-3";
             newDiv.innerHTML = `
-            <div class="card w-100 h-100">
-                 <div class="card-body">
-                    <img src="${item.url_img}" class="img-fluid divImgColegas">
-                    <div class="card-header text-center"><a href="#" target="_blank" class="text-decoration-none text-dark">${item.nome}</a></div>
-                    <button class="badge bg-dark mt-2 d-block"><img src="./assets/Imagens/git.png" class="icon"> Github</button>
+                <div class="card h-100">
+                    <img src="${item.url_img}" class="card-img-top" alt="Imagem do amigo">
+                    <div class="card-body">
+                        <h5 class="card-title">${item.nome}</h5>
+                        <p class="card-text">${item.desc}</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://github.com/${item.git_user}" target="_blank" class="btn btn-dark me-2">
+                                <img src="./assets/Imagens/git.png" class="icon" alt="Ícone do Github"> Github
+                            </a>
+                            <a href="https://www.instagram.com/${item.insta_user}" target="_blank">
+                                <img src="./assets/Imagens/instagram.png" class="iconfriends" alt="Ícone do Instagram">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
             `;
             linha.appendChild(newDiv);
         });
