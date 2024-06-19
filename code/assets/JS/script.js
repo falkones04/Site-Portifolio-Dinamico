@@ -11,13 +11,18 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(res => res.json())
         .then(reposData => {
             mostrarRepositorios(reposData); 
-            return fetch('./assets/Json/bd.json');
+            return fetch('http://localhost:3000/conteudo');
         })
         .then(res => res.json())
         .then(jsonDados => {
-            conteudo = jsonDados.conteudo;
+            conteudo = jsonDados;
             amigos = jsonDados.amigos;
             MostrarConteudo(conteudo);
+            return fetch('http://localhost:3000/amigos');
+        })
+        .then(res => res.json())
+        .then(jsonDados => {
+            amigos = jsonDados
             MostrarAmigos(amigos); 
         })
         .catch(error => console.error("Erro ao buscar dados JSON:", error));
