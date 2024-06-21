@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(res => res.json())
         .then(jsonDados => {
             conteudo = jsonDados;
-            amigos = jsonDados.amigos;
             MostrarConteudo(conteudo);
             return fetch('http://localhost:3000/amigos');
         })
