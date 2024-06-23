@@ -43,15 +43,15 @@
       "url_img": "./Assets/Imagens/samuca.png",
       "git_user": "SamuelGarciaVieira",
       "insta_user":"samuellg__",
-      "desc": "casado com a Michelly "
+      "desc": "Colega de faculdade e participou do projeto Puc-overflow ."
     },
     {
       "id": 1,
       "nome": "Maria Fernanda",
       "url_img": "./Assets/Imagens/fe.png",
       "git_user": "fegabrich",
-      "insta_user":"kailanyos",
-      "desc": "Descobridora dos sete mares."
+      "insta_user":"fegabrich",
+      "desc": "Colega de faculdade e é com quem tiro minhas duvidas "
     },
     {
       "id": 2,
@@ -59,7 +59,7 @@
       "url_img": "./Assets/Imagens/Danputifero.jpeg",
       "git_user": "Danilohr",
       "insta_user":"daniloriguette",
-      "desc": "Garoto de programa e script kid"
+      "desc": "Colega de faculdade e participou do projeto Sisu-Aed."
     },
     {
       "id": 3,
@@ -67,7 +67,7 @@
       "url_img": "./Assets/Imagens/lany.png",
       "git_user": "kailanyos",
       "insta_user":"kailanyos",
-      "desc": "mexe com energia misticas...sabe tirar tarot."
+      "desc": "Colega de faculdade e me auxilia em projetos."
     }
   ]
 }

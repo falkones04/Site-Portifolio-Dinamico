@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="card-header fw-bold">${repo.name}</div>
                         <div class="card-body">
                             <p>${descricaoLimitada || 'No description'}</p>
-                            <span class="badge bg-success p-2">${repo.language}</span>
+                            <span class="badge bg-success p-2">${repo.language||"linguagem não definida"}</span>
                             <div class="float-end">
                                 <img src="./Assets/Imagens/star.png" class="icon mx-2"><span>${repo.stargazers_count}</span>
                                 <img src="./Assets/Imagens/fork.png" class="icon mx-2"><span>${repo.forks_count}</span>
@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         amigos.forEach(item => {
             let newDiv = document.createElement("div");
-            newDiv.className = "col-12 col-sm-6 col-md-3";
+            newDiv.className = "col-12 col-sm-6 col-md-2";
             newDiv.innerHTML = `
                 <div class="card h-100">
                     <img src="${item.url_img}" class="card-img-top" alt="Imagem do amigo">
